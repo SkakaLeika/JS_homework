@@ -1,15 +1,10 @@
-html,
-body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
 
 table {
     font-family: Impact, sans-serif;
     font-size: 30px;
     background-color: beige;
     color: #3a2702;
+    margin: 0 auto;
 }
 td {
     height: 50px;
@@ -33,12 +28,7 @@ tr:nth-child(even) td:first-child{
 tr:nth-child(odd) td:last-child{
     background-color: beige;
 }
-div {
-    margin: 125px 0 25px 20px;
-    height: 75px;
-    width: 150px;
-    background-color: beige;
-    border-radius: 25%;
-    text-align: center;
-}
+
+
+
 

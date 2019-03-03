@@ -1,5 +1,4 @@
 'use strict'
-
 function chessboard() {
     let newTable = document.createElement( 'table' ),
         lets = [ '','A','B','C','D','E','F','G','H','' ],
@@ -16,16 +15,16 @@ function chessboard() {
                     newTd.innerText = lets[ j ];
                     break;
                 case 1:
-                    newTd.innerHTML = blackFigs1[ j ];
-                    break;
-                case 2:
                     newTd.innerHTML = blackFigs2[ j ];
                     break;
+                case 2:
+                    newTd.innerHTML = blackFigs1[ j ];
+                    break;
                 case 7:
-                    newTd.innerHTML = whiteFigs1[ j ];
+                    newTd.innerHTML = whiteFigs2[ j ]; 
                     break;
                 case 8:
-                    newTd.innerHTML = whiteFigs2[ j ];
+                    newTd.innerHTML = whiteFigs1[ j ];
                     break;
                 case 9:
                     newTd.innerText = lets[ j ];
@@ -38,7 +37,6 @@ function chessboard() {
             }
         }
     }
-    let elem = document.getElementsByClassName( 'task511' );
     document.body.appendChild( newTable );
 };
 chessboard();
